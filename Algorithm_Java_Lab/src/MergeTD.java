@@ -21,9 +21,20 @@ public class MergeTD extends AbstractSort{
     private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi){
         // 절반 sort
         if (hi <= lo) return;
+
+        /*
+        부분의 크기 <= 7인 경우 cutoff 설정, 해당 부분은 Insertion Sort
+        int CUTOFF = 7;
+        if (hi <= lo + CUTOFF - 1){
+            Insertion.sort(a, lo, hi);
+            return;
+        }
+         */
+
         int mid = lo + (lo + hi) / 2;
         sort(a, aux, lo, mid); // mid가 hi가 되는 걸 반복
         sort(a, aux, mid + 1, hi);
+        // if (less(a[mid], a[mid + 1])) return; // 이미 정렬된 경우 pass
         merge(a, aux, lo, mid, hi);
     }
 
