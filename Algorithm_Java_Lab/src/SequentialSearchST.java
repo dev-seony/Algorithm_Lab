@@ -72,7 +72,7 @@ public class SequentialSearchST<K, V>{
 
     public int size() { return N; }
 
-    /*
+
     // same as FrequencyCounter
     public static void main(String[] args) {
         int minlen = Integer.parseInt(args[0]);
@@ -110,5 +110,5 @@ public class SequentialSearchST<K, V>{
             e.printStackTrace();
         }
         if (sc != null) sc.close();
-    } */
+    }
 }

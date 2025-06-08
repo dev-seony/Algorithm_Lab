@@ -1,4 +1,4 @@
-public class BST_DC {
+public class DC_BST {
     public int location(int[] a, int key) {
         int mid = location(a, 0, a.length - 1, key);
         return mid;
@@ -17,7 +17,7 @@ public class BST_DC {
 
     public static void main(String args[]) {
         int[] a = {1, 2, 5, 7, 8};
-        BST_DC bst = new BST_DC();
+        DC_BST bst = new DC_BST();
         int location = bst.location(a, 8);
         System.out.print(location);
     }

@@ -1,4 +1,4 @@
-public class QuickSort_DC extends AbstractSort{
+public class DC_QuickSort extends AbstractSort{
     void quicksort(Comparable[] a) {
         quicksort(a, 0, a.length - 1);
     }
@@ -19,7 +19,7 @@ public class QuickSort_DC extends AbstractSort{
         return swapPoint;
     }
     public static void main(String args[]) {
-        QuickSort_DC qs = new QuickSort_DC();
+        DC_QuickSort qs = new DC_QuickSort();
         Comparable[] a = {15, 22, 13, 27, 12, 10, 20, 25};
         qs.quicksort(a);
         show(a);
